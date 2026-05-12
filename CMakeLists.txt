@@ -1,23 +1,15 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(Ass_Ds2)
+project(Assignment)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# ================= AVL =================
-add_executable(AVLMain
+add_executable(Analysis
+
+        Analysis.cpp
+
+        Problem1/BST.cpp
         Problem1/AVL.cpp
-        Problem1/AVLMain.cpp
-)
 
-# ================= BST =================
-add_executable(BSTMain
-        Problem2/BST.cpp
-        Problem2/BSTMain.cpp
-)
-
-# ================= HEAP =================
-add_executable(HeapMain
-        Problem3/Heap.cpp
-        Problem3/HeapMain.cpp
+        Problem2/Heap.cpp
 )
