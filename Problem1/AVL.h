@@ -1,18 +1,14 @@
 #ifndef AVL_H
 #define AVL_H
 
+#include "Book.h"
 #include <iostream>
 #include <string>
 #include <algorithm>
 #include <cmath>
 using namespace std;
 
-// Book structure containing ID, title, and author
-struct Book {
-    int id;
-    string title;
-    string author;
-};
+
 
 // AVL Tree node
 struct AVLNode {
