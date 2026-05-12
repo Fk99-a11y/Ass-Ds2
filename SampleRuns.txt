@@ -1,0 +1,148 @@
+========================
+AVL TREE DEMONSTRATION
+========================
+
+1. Inserting 15 random books...
+
+2. In-order traversal (sorted by ID):
+
+30 - Operating Systems - Ahmed
+50 - Data Structures - Sara
+72 - Book_72 - Author_2
+89 - Book_89 - Author_9
+105 - C++ Basics - Ali
+120 - Databases - Mona
+134 - Book_134 - Author_4
+145 - Book_145 - Author_5
+167 - Book_167 - Author_7
+181 - Book_181 - Author_1
+200 - Algorithms - Omar
+214 - Book_214 - Author_4
+250 - Graphics - Hassan
+300 - Deep Learning - Mahmoud
+
+3. Tree height: 5
+
+4. Search for ID 120:
+
+Book Found:
+ID: 120
+Title: Databases
+Author: Mona
+Search steps: 4
+
+5. Search for non-existing ID 999:
+
+Book with ID 999 not found.
+Search steps: 5
+
+6. Delete ID 50:
+
+After deletion:
+
+30 - Operating Systems - Ahmed
+72 - Book_72 - Author_2
+89 - Book_89 - Author_9
+105 - C++ Basics - Ali
+120 - Databases - Mona
+134 - Book_134 - Author_4
+145 - Book_145 - Author_5
+167 - Book_167 - Author_7
+181 - Book_181 - Author_1
+200 - Algorithms - Omar
+214 - Book_214 - Author_4
+250 - Graphics - Hassan
+300 - Deep Learning - Mahmoud
+
+7. Range search [70 .. 150]:
+
+72 - Book_72 - Author_2
+89 - Book_89 - Author_9
+105 - C++ Basics - Ali
+120 - Databases - Mona
+134 - Book_134 - Author_4
+145 - Book_145 - Author_5
+
+8. Find closest book to ID 110:
+
+Closest book ID to 110 is: 105
+
+========================
+SORTED INPUT TEST
+========================
+
+Inserted IDs 1..10 in ascending order.
+
+AVL Tree Height: 4
+(logarithmic ~ log2(10) ~ 4)
+
+In-order:
+
+1 - Sorted_1 - Author
+2 - Sorted_2 - Author
+3 - Sorted_3 - Author
+4 - Sorted_4 - Author
+5 - Sorted_5 - Author
+6 - Sorted_6 - Author
+7 - Sorted_7 - Author
+8 - Sorted_8 - Author
+9 - Sorted_9 - Author
+10 - Sorted_10 - Author
+
+========================
+COMPARISON (BST vs AVL)
+========================
+
+BST with same sorted input would have height = 10 (skewed).
+
+AVL height = 4
+-> remains balanced due to rotations.
+
+
+====================================
+HEAP IMPLEMENTATION DEMONSTRATION
+====================================
+
+Patient inserted successfully.
+Patient inserted successfully.
+Patient inserted successfully.
+Patient inserted successfully.
+Patient inserted successfully.
+
+All Patients (Level Order):
+
+ID: 4 | Name: Mona | Severity: 9 | Arrival Time: 0
+ID: 2 | Name: Sara | Severity: 9 | Arrival Time: 2
+ID: 3 | Name: Ali | Severity: 7 | Arrival Time: 3
+ID: 1 | Name: Ahmed | Severity: 5 | Arrival Time: 1
+ID: 5 | Name: Omar | Severity: 4 | Arrival Time: 4
+
+Next Patient:
+
+ID: 4
+Name: Mona
+Severity: 9
+Arrival Time: 0
+
+Treating Patient:
+
+ID: 4
+Name: Mona
+Severity: 9
+Arrival Time: 0
+
+All Patients (Level Order):
+
+ID: 2 | Name: Sara | Severity: 9 | Arrival Time: 2
+ID: 1 | Name: Ahmed | Severity: 5 | Arrival Time: 1
+ID: 3 | Name: Ali | Severity: 7 | Arrival Time: 3
+ID: 5 | Name: Omar | Severity: 4 | Arrival Time: 4
+
+Severity updated successfully.
+
+All Patients (Level Order):
+
+ID: 1 | Name: Ahmed | Severity: 10 | Arrival Time: 1
+ID: 2 | Name: Sara | Severity: 9 | Arrival Time: 2
+ID: 3 | Name: Ali | Severity: 7 | Arrival Time: 3
+ID: 5 | Name: Omar | Severity: 4 | Arrival Time: 4
