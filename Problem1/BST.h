@@ -1,20 +1,10 @@
 #ifndef BST_H
 #define BST_H
-
+#include "Book.h"
 #include <iostream>
 #include <climits>
 
 using namespace std;
-
-// ================= BOOK STRUCT =================
-
-// Book information
-struct Book {
-    int id;
-    string title;
-    string author;
-};
-
 // ================= NODE STRUCT =================
 
 // Tree node
